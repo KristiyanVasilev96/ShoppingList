@@ -25,9 +25,7 @@ public class ProductController {
 
     @GetMapping("/add")
     public String add(HttpSession httpSession) {
-        if(httpSession.getAttribute("user")==null){
-            return "redirect:login";
-        }
+        
         return "product-add";
     }
 
