@@ -24,7 +24,7 @@ public class ProductController {
     }
 
     @GetMapping("/add")
-    public String add(HttpSession httpSession) {
+    public String add() {
         
         return "product-add";
     }
